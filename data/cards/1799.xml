@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_dined.rnc" 
+   "type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader xmlns:xi="http://www.w3.org/2001/XInclude">
+      <xi:include href="../Header.xml"/>
+   </teiHeader>
+   <text>
+      <body>
+
+
+         <div type="entry" xml:id="h1799-01-01">
+            <pb facs="f002r"/>
+            <ab type="metadata">
+                    <date when="1799-01-01"/>
+                    <persName ref="pe001" slept="no"/>
+                    <placeName ref="pl002" host="no"/>
+                </ab>
+            <ab type="transcription"><!----></ab>
+         </div>
+         <div type="entry" xml:id="h1799-01-02">
+                <pb facs="f002v"/>
+                <ab type="metadata">
+                    <date when="1799-01-02"/>
+                    <persName ref="pe005" slept="yes"/>
+                    <persName ref="pe005" slept="yes"/>
+                    <persName ref="pe009" slept="yes"/>
+                    <placeName ref="pl005" host="no"/>
+                </ab>
+                <ab type="transcription"><!--ghj--></ab>
+            </div>
+         <div type="entry" xml:id="h1799-01-03">
+            <pb facs="f002r"/>
+            <ab type="metadata">
+                    <date when="1799-01-03"/>
+                    <persName ref="pe002" slept="no"/>
+                    <persName ref="pe008" slept="no"/>
+                    <persName ref="pe001" slept="no"/>
+                    <placeName ref="pl007" host="yes"/>
+                </ab>
+            <ab type="transcription"><!----></ab>
+         </div>
+         <div type="entry" xml:id="h1799-01-05">
+                <pb facs="f002r"/>
+                <ab type="metadata">
+                    <date when="1799-01-05"/>
+                    <persName ref="pe003" slept="yes"/>
+                    <persName ref="pe004" slept="yes"/>
+                    <persName ref="pe005" slept="no"/>
+                    <placeName ref="pl006" host="no"/>
+                    <placeName ref="pl007" host="yes"/>
+                </ab>
+                <ab type="transcription"><!--T<b>e</b>st<u>s hj </u><br>--></ab>
+            </div>
+         <div type="entry" xml:id="h1799-01-08">
+                <pb facs="f002v"/>
+                <ab type="metadata">
+                    <date when="1799-01-08"/>
+                    <persName ref="pe011" slept="no"/>
+                    <placeName ref="pl009" host="yes"/>
+                </ab>
+                <ab type="transcription"><!--<b>This is a note</b> for the <u>8<sup>th</sup> of January</u>. Yes! Yes yes!<br>--></ab>
+            </div>
+            <div type="entry" xml:id="h1799-01-22">
+                <pb facs="f003r"/>
+                <ab type="metadata">
+                    <date when="1799-01-22"/>
+                    <persName ref="pe036" slept="no"/>
+                    <placeName ref="pl006" host="yes"/>
+                </ab>
+                <ab type="transcription"><!--ghj--></ab>
+            </div>
+      </body>
+   </text>
+</TEI>

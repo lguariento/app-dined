@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="pldb">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Database of persons</title>
+         </titleStmt>
+         <publicationStmt>
+            <ab/>
+         </publicationStmt>
+         <sourceDesc>
+            <ab/>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPerson>
+            <person xml:id="pe001">
+               <persName>
+                  <roleName>Lady</roleName>
+                  <forename/>
+                  <surname>Holland</surname>
+               </persName>
+            </person>
+            <person xml:id="pe002">
+               <persName>
+                  <roleName>Lady</roleName>
+                  <forename>Lucy</forename>
+                  <surname>FitzGerald</surname>
+               </persName>
+            </person>
+            <person xml:id="pe003">
+               <persName>
+                  <roleName>Miss</roleName>
+                  <forename>Caroline</forename>
+                  <surname>Fox</surname>
+               </persName>
+            </person>
+            <person xml:id="pe004">
+               <persName>
+                  <roleName>Dr</roleName>
+                  <forename/>
+                  <surname>Drew</surname>
+               </persName>
+            </person>
+            <person xml:id="pe005">
+               <persName>
+                  <roleName>Lord</roleName>
+                  <forename/>
+                  <surname>Stevens</surname>
+               </persName>
+            </person>
+            <person xml:id="pe006">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename>G.</forename>
+                  <surname>Ellis</surname>
+               </persName>
+            </person>
+            <person xml:id="pe007">
+               <persName>
+                  <roleName>Reverend</roleName>
+                  <forename>Matthew</forename>
+                  <surname>Marsh</surname>
+               </persName>
+            </person>
+
+            <person xml:id="pe008">
+               <persName>
+                  <roleName>Mr &amp; Mrs</roleName>
+                  <forename/>
+                  <surname>Beauclerk</surname>
+               </persName>
+            </person>
+
+            <person xml:id="pe009">
+               <persName>
+                  <roleName>Lord</roleName>
+                  <forename>Frederick</forename>
+                  <surname>Ponsonby</surname>
+                  <addName>3rd Earl of Bessborough</addName>
+               </persName>
+            </person>
+            <person xml:id="pe010">
+               <persName>
+                  <roleName>Lady</roleName>
+                  <forename>Henrietta Frances</forename>
+                  <surname>Spencer</surname>
+                  <addName>Countess of Bessborough</addName>
+               </persName>
+            </person>
+            <person xml:id="pe011">
+               <persName>
+                  <roleName>Lord</roleName>
+                  <forename>George</forename>
+                  <surname>Howard</surname>
+                  <addName>Viscount Morpeth</addName>
+                  <addName>6th Earl of Carlisle</addName>
+               </persName>
+            </person>
+            <person xml:id="pe012">
+               <persName>
+                  <roleName>Baron</roleName>
+                  <forename>John</forename>
+                  <surname>Parker</surname>
+                  <addName>2nd Baron of Boringdon</addName>
+                  <addName>1st Earl of Morley</addName>
+               </persName>
+            </person>
+            <person xml:id="pe013">
+               <persName>
+                  <roleName>Lord</roleName>
+                  <forename>Granville</forename>
+                  <surname>Leveson-Gower</surname>
+               </persName>
+            </person>
+            <person xml:id="pe014">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename/>
+                  <surname>Adderley</surname>
+               </persName>
+            </person>
+            <person xml:id="pe015">
+               <persName>
+                  <roleName>Mister</roleName>
+                  <forename/>
+                  <surname>Newbolt</surname>
+               </persName>
+            </person>
+
+            <person xml:id="pe016">
+               <persName>
+                  <roleName>Lord</roleName>
+                  <forename>William</forename>
+                  <surname>Amherst</surname>
+                  <addName>Pitt</addName>
+                  <addName>1st Earl Amherst</addName>
+               </persName>
+            </person>
+            <person xml:id="pe017">
+               <persName>
+                  <roleName>Mister</roleName>
+                  <surname>[unknown]</surname>
+                  <forename>Hurges</forename>
+               </persName>
+            </person>
+            <person xml:id="pe018">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename/>
+                  <surname>Mackintosh</surname>
+               </persName>
+            </person>
+            <person xml:id="pe019">
+               <persName>
+                  <roleName>General</roleName>
+                  <forename/>
+                  <surname>FitzPatrick</surname>
+               </persName>
+            </person>
+            <person xml:id="pe020">
+               <persName>
+                  <roleName>Mister</roleName>
+                  <forename/>
+                  <surname>Hane</surname>
+               </persName>
+            </person>
+            <person xml:id="pe021">
+               <persName>
+                  <roleName>Sir</roleName>
+                  <forename>Phillip?</forename>
+                  <surname>Francis</surname>
+               </persName>
+            </person>
+            <person xml:id="pe022">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename>T.</forename>
+                  <surname>Sheridan</surname>
+               </persName>
+            </person>
+
+            <person xml:id="pe023">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename/>
+                  <surname>Tierney</surname>
+               </persName>
+            </person>
+            <person xml:id="pe024">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename>C.</forename>
+                  <surname>Canning</surname>
+               </persName>
+            </person>
+            <person xml:id="pe025">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename/>
+                  <surname>Smith</surname>
+               </persName>
+            </person>
+            <person xml:id="pe026">
+               <persName>
+                  <roleName>Mrs</roleName>
+                  <forename/>
+                  <surname>Smith</surname>
+               </persName>
+            </person>
+            <person xml:id="pe027">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename/>
+                  <surname>Hamilton</surname>
+               </persName>
+            </person>
+            <person xml:id="pe028">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename/>
+                  <surname>Buonaiuti</surname>
+               </persName>
+            </person>
+            <person xml:id="pe029">
+               <persName>
+                  <roleName>Lord</roleName>
+                  <forename/>
+                  <surname>Holland</surname>
+               </persName>
+            </person>
+            <person xml:id="pe030">
+               <persName>
+                  <roleName>Captain</roleName>
+                  <forename/>
+                  <surname>Murray</surname>
+               </persName>
+            </person>
+            <person xml:id="pe031">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename/>
+                  <surname>Lewis</surname>
+               </persName>
+            </person>
+            <person xml:id="pe032">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename/>
+                  <surname>Robinson</surname>
+               </persName>
+            </person>
+            <person xml:id="pe033">
+               <persName>
+                  <roleName>Lord</roleName>
+                  <forename>Robert</forename>
+                  <surname>Spencer</surname>
+               </persName>
+            </person>
+
+            <person xml:id="pe036">
+               <persName>
+                  <roleName>Sir</roleName>
+                  <forename>John</forename>
+                  <surname>Riddell</surname>
+               </persName>
+            </person>
+            <person xml:id="pe037">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename/>
+                  <surname>Cornewall</surname>
+                  <addName>Cornwall</addName>
+               </persName>
+            </person>
+            <person xml:id="pe038">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename/>
+                  <surname>Douglas</surname>
+               </persName>
+            </person>
+            <person xml:id="pe039">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename/>
+                  <surname>Gordon</surname>
+               </persName>
+            </person>
+            <person xml:id="pe040">
+               <persName>
+                  <roleName>Sir</roleName>
+                  <forename>Gilbert</forename>
+                  <surname>Affleck</surname>
+               </persName>
+            </person>
+            <person xml:id="pe041">
+               <persName>
+                  <roleName>Lady</roleName>
+                  <forename>Mary</forename>
+                  <surname>Affleck</surname>
+                  <addName>Vassall</addName>
+               </persName>
+            </person>
+            <person xml:id="pe042">
+               <persName>
+                  <roleName/>
+                  <forename>Elizabeth</forename>
+                  <surname>Vernon</surname>
+               </persName>
+            </person>
+            <person xml:id="pe043">
+               <persName>
+                  <roleName>Lady</roleName>
+                  <forename>Anne</forename>
+                  <surname>FitzPatrick</surname>
+               </persName>
+            </person>
+            <person xml:id="pe044">
+               <persName>
+                  <roleName>Lady</roleName>
+                  <forename>Gertrude</forename>
+                  <surname>FitzPatrick</surname>
+               </persName>
+            </person>
+            <person xml:id="pe045">
+               <persName>
+                  <roleName>Lord</roleName>
+                  <forename/>
+                  <surname>Ossory</surname>
+               </persName>
+            </person>
+            <person xml:id="pe046">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename>William</forename>
+                  <surname>Lamb</surname>
+               </persName>
+            </person>
+            <person xml:id="pe047">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename>William</forename>
+                  <surname>Smith</surname>
+               </persName>
+            </person>
+            <person xml:id="pe048">
+               <persName>
+                  <roleName>Sir</roleName>
+                  <forename>Lionel</forename>
+                  <surname>Copley</surname>
+               </persName>
+            </person>
+            <person xml:id="pe049">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename/>
+                  <surname>Dumont</surname>
+               </persName>
+            </person>
+            <person xml:id="pe050">
+               <persName>
+                  <roleName>Lord</roleName>
+                  <forename>Edward</forename>
+                  <surname>Digby</surname>
+               </persName>
+            </person>
+            <person xml:id="pe051">
+               <persName>
+                  <roleName/>
+                  <forename>Charles James</forename>
+                  <surname>Fox</surname>
+                  <addName>Junior</addName>
+               </persName>
+            </person>
+
+            <person xml:id="pe052">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename>William</forename>
+                  <surname>Windham</surname>
+                  <addName>Secretary</addName>
+               </persName>
+            </person>
+            <person xml:id="pe053">
+               <persName>
+                  <roleName>Duke</roleName>
+                  <forename>Francis</forename>
+                  <surname>Russell</surname>
+                  <addName>of Bedford</addName>
+               </persName>
+            </person>
+            <person xml:id="pe054">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename>Charles</forename>
+                  <surname>Sheridan</surname>
+               </persName>
+            </person>
+            <person xml:id="pe055">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename/>
+                  <surname>Weld</surname>
+               </persName>
+            </person>
+
+            <person xml:id="pe056">
+               <persName>
+                  <roleName>Baron</roleName>
+                  <forename/>
+                  <surname>Schack</surname>
+               </persName>
+            </person>
+            <person xml:id="pe057">
+               <persName>
+                  <roleName>Lord</roleName>
+                  <forename>Charles Augustus</forename>
+                  <surname>Bennet</surname>
+                  <addName>5th Earl of Tankerville</addName>
+                  <addName>Lord Ossulston</addName>
+               </persName>
+            </person>
+            <person xml:id="pe058">
+               <persName>
+                  <roleName>Mr</roleName>
+                  <forename>Sidney</forename>
+                  <surname>Smith</surname>
+                  <addName>Sydney</addName>
+               </persName>
+            </person>
+            <person xml:id="pe059">
+               <persName>
+                  <roleName>Lord</roleName>
+                  <forename>Henry</forename>
+                  <surname>Fitzgerald</surname>
+               </persName>
+            </person>
+            <person xml:id="pe060">
+               <persName>
+                  <roleName>Lady</roleName>
+                  <forename>Charlotte</forename>
+                  <surname>Fitzgerald-de Ros</surname>
+                  <addName>Lady Henry FitzGerald</addName>
+                  <addName>20th Baroness de Ros of Helmsley</addName>
+               </persName>
+            </person>
+            <person xml:id="pe061">
+               <persName>
+                  <roleName>Dr</roleName>
+                  <forename>Jan</forename>
+                  <surname>Ingenhousz</surname>
+               </persName>
+            </person>
+            <person xml:id="pe062">
+               <persName>
+                  <roleName>Lord</roleName>
+                  <forename>John</forename>
+                  <surname>Bligh</surname>
+                  <addName>4th Earl of Darnley</addName>
+               </persName>
+            </person>
+            <person xml:id="pe063">
+               <persName>
+                  <roleName>Lord</roleName>
+                  <forename>Sackville</forename>
+                  <surname>Tufton</surname>
+                  <addName>9th Earl of Thanet</addName>
+               </persName>
+            </person>
+            </listPerson>
+      </body>
+   </text>
+</TEI>

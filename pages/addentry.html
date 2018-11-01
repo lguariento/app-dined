@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="page-header">
+                <h1 style="text-align: center;">Add an entry into the database</h1>
+            </div>
+            <br/>
+
+            <!-- addPerson -->
+
+            <div class="modal fade" id="addPerson" tabindex="-1" role="dialog" aria-labelledby="addPerson" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addPersonlabel">Add a new person</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                    <span class="oi oi-circle-x"/>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="addPersonForm" action="../modules/handlerNewPerson.xq" method="post" onsubmit="addNewPers(this); return false;">
+                                <div class="form-group">
+                                    <label for="rolename" class="col-form-label">Role name:</label>
+                                    <input type="text" class="form-control" name="rolename" id="rolename"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="forename" class="col-form-label">Forename:</label>
+                                    <input type="text" class="form-control" name="forename" id="forename"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="surname" class="col-form-label">Surname:</label>
+                                    <input type="text" class="form-control" name="surname" id="surname"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="aka" class="col-form-label">A.k.a:</label>
+                                    <input type="text" class="form-control" name="aka" id="aka"/>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" id="submitPerson" class="btn btn-primary">Save</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- end addPerson -->
+
+
+            <!-- addPlace -->
+
+            <div class="modal fade" id="addPlace" tabindex="-1" role="dialog" aria-labelledby="addPerson" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addPlacelabel">Add a new place</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                    <span class="oi oi-circle-x"/>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="addPlaceForm" action="../modules/handlerNewPlace.xq" method="post" onsubmit="addNewPlace(this); return false;">
+                                <div class="form-group">
+                                    <label for="geogname" class="col-form-label">Place name:</label>
+                                    <input type="text" class="form-control" name="geogname" id="geogname"/>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" id="submitPlace" class="btn btn-primary">Save</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- end addPlace -->
+
+
+
+
+            <div class="modal fade" id="dateExists" tabindex="-1" role="dialog" aria-labelledby="dateExistsTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="dateExistsTitle">This entry is already in
+                                the database</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">x</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">The entry already exists!</div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Overwrite</button>
+                            <button type="button" class="btn btn-primary" id="edit">Edit the
+                                existing entry</button>
+                            <button type="button" class="btn btn-warning" id="change">Change
+                                date</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="color: red;" id="serverResponse"/>
+
+            <form id="f" method="post" class="col-md-12">
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+
+                        <div class="card-deck">
+                            <div class="card border-primary mb-3" style="max-width: 50%;">
+                            <div class="card-header">
+                                    <span class="oi oi-calendar"/> &lt;date/@when&gt;</div>
+                                <div class="card-body text-primary">
+                                <h5 class="card-title">Which date?</h5>
+                                    <input class="form-control" style="width: 100%;" type="text" id="datepicker" required="required"/>
+                                    <input name="when" id="when" type="hidden"/>
+                                </div>
+                            </div>
+
+                            <div class="card border-primary mb-3" style="max-width: 50%;">
+                            <div class="card-header">
+                                    <span class="oi oi-bookmark"/> &lt;pb/@facs&gt;</div>
+                                <div class="card-body text-primary">
+
+<h5 class="card-title">Which manuscript page?</h5>
+                                    <input class="form-control" name="facs" style="width: 100%;" type="text" id="manuscriptPage" required="required"/>
+
+                                    <script> var options = { theme: "square", cssClasses: 'col',
+                                        url: "../data/indices/facsdb.xml", dataType: "xml",
+                                        xmlElementName: "pb", getValue: function(element) { var
+                                        $facs = $(element).attr("facs"); return $facs;}, list: {
+                                        maxNumberOfElements: 2000, match: { enabled: true },
+                                        showAnimation: { type: "fade", time: 400, callback:
+                                        function() {} }, hideAnimation: { type: "slide", time: 400,
+                                        callback: function() {} }, } };
+                                        $("#manuscriptPage").easyAutocomplete(options); </script>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card border-primary mb-3">
+                        <div class="card-header">
+                                <span class="oi oi-person"/> &lt;persName&gt;</div>
+
+                            <div class="card-body text-primary">
+                                <div class="card-text">
+                                <h5 style="display: inline;" class="card-title">Who is
+                                        mentioned?</h5>
+                                    <button type="button" class="btn btn-outline-primary btn-sm" data-duplicate-add="person">
+                                        <span class="oi oi-plus"/> 1</button>
+                                    <button type="button" class="btn btn-outline-primary btn-sm float-right" data-toggle="modal" data-target="#addPerson">
+                                        <span class="oi oi-person"/> add a new
+                                        person</button>
+                                        
+                                    <br/>
+                                    <!--<button type="button" data-duplicate-remove="person">- remove</button>-->
+                                    <br/>
+
+                                    <div id="persons">
+
+                                        <div data-duplicate="person" class="input-group mb-3">
+                                            <button class="btn btn-outline-warning" type="button" data-duplicate-remove="person">-</button>
+
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="inputGroupSelect01">Slept?</label>
+                                            </div>
+                                            <!-- input-group-prepend -->
+
+                                            <select name="slept" class="custom-select" id="inputGroupSelect01">
+                                                <option value="no" selected="selected">No</option>
+                                                <option value="yes">Yes</option>
+                                            </select>
+
+                                            <input type="text" class="form-control" id="personInput0" placeholder="enter a person" required="required"/>
+                                            <input name="peid" id="id-holder" readonly="readonly"/>
+
+                                        </div>
+                                        <!-- input-group mb-3 -->
+                                        <div style="color: red;" id="personAdded"/>
+
+                                    </div>
+                                    <!-- id=persons -->
+
+
+                                </div>
+                                <!-- card-text -->
+
+                            </div>
+                            <!-- card-body -->
+
+                        </div>
+                        <!-- card bg-light mb-3 for places -->
+                        <div class="card border-primary mb-3">
+                        <div class="card-header">
+                                <span class="oi oi-signpost"/> &lt;placeName&gt;</div>
+
+                            <div class="card-body text-primary">
+                                <div class="card-text">
+                                <h5 style="display: inline;" class="card-title">Which places are
+                                        mentioned?</h5>
+                                    <button type="button" class="btn btn-outline-primary btn-sm" data-duplicatepl-add="place">
+                                        <span class="oi oi-plus"/> 1</button>
+                                    <button type="button" class="btn btn-outline-primary btn-sm float-right" data-toggle="modal" data-target="#addPlace">
+                                        <span class="oi oi-signpost"/> add a new
+                                    place</button>
+                                    <br/>
+                                    <br/>
+                                    <!--<button type="button" data-duplicatepl-remove="place">- remove</button>-->
+
+                                    <div id="places" data-duplicatepl="place" class="input-group mb-3">
+                                        <button class="btn btn-outline-warning" type="button" data-duplicatepl-remove="place">-</button>
+
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect02">Host?</label>
+                                        </div>
+                                        <!-- input-group-prepend -->
+
+                                        <select name="host" class="custom-select" id="inputGroupSelect02">
+                                            <option value="no">No</option>
+                                            <option value="yes" selected="selected">Yes</option>
+                                        </select>
+
+                                        <input type="text" class="form-control" id="placeInput" placeholder="enter a place" required="required"/>
+                                        <input name="plid" id="plid-holder" readonly="readonly"/>
+
+                                    </div>
+                                    <!-- input-group mb-3 -->
+                                    
+                                    <div style="color: red;" id="placeAdded"/>
+                                </div>
+                                <!-- card-text -->
+                            </div>
+                            <!-- card-body -->
+                        </div>
+                        <!-- card bg-light mb-3 -->
+                    </div>
+                    <!-- form-group -->
+
+                    <div style="z-index: 1;" class="form-group col-md-12">
+                        <label for="transcriptionText">Transcription</label>
+                        <textarea name="transcription" class="form-control" id="transcriptionText" rows="3"/>
+                    </div>
+                    <!-- form-group for transcription -->
+
+
+                </div>
+                <button type="button" id="reset" class="btn btn-secondary float-left">Reset the form</button>
+                <button type="submit" id="submit" class="btn btn-primary float-right">Submit entry</button>
+                <!-- form row -->
+            </form>
+            <br/>
+            <br/>
+            <br/>
+
+            <script> $(document).ready(function() {$('#dateExists').modal({ show: false}) }); </script>
+            
+            <script>$('#reset').click(function () {
+            $('[id^=personInput]').val('');
+            $('[id^=placeInput]').val('');
+            $('[id=inputGroupSelect01]').val('no');
+            $('[id=inputGroupSelect02]').val('yes');
+            $('[id^=id-holder]').val('');
+            $('[id^=plid-holder]').val('');
+            $('[id=manuscriptPage]').val('');
+            $('[id=when]').val('');
+            $('[id=datepicker]').val('');
+            $('div.note-editable').text('');
+            $('[data-duplicatepl="place"]').not(':first').remove();
+            $('[data-duplicate="person"]').not(':first').remove();
+            $("html, body").animate({
+            scrollTop: 0
+            },
+            "slow");
+            });
+            
+            
+            </script>
+            <script src="../resources/js/datepicker.js"/>
+            <script src="../resources/js/addentry.js"/>
+            <script src="../resources/js/addPePl.js"/>
+            <script src="../resources/js/jquery.duplicate_pe.js"/>
+            <!-- this includes autocomplete -->
+            <script src="../resources/js/jquery.duplicate_pl.js"/>
+            <!-- this includes autocomplete -->
+            <script src="../resources/js/transcription.js"/>
+
+        </div>
+        <!-- col-md-12 -->
+    </div>
+    <!-- row -->
+</div><!-- main div -->

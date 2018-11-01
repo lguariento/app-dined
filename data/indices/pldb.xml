@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="pldb">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Database of places</title>
+         </titleStmt>
+         <publicationStmt>
+            <ab/>
+         </publicationStmt>
+         <sourceDesc>
+            <ab/>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="pl001">
+               <placeName>
+                  <geogName>Lansdown House</geogName>
+               </placeName>
+            </place>
+            <place xml:id="pl002">
+               <placeName>
+                  <geogName>Drury Lane</geogName>
+               </placeName>
+            </place>
+            <place xml:id="pl003">
+               <placeName>
+                  <geogName>House of Lords</geogName>
+               </placeName>
+            </place>
+            <place xml:id="pl004">
+               <placeName>
+                  <geogName>House of Commons</geogName>
+               </placeName>
+            </place>
+            <place xml:id="pl005">
+               <placeName>
+                  <geogName>Sunning Hill</geogName>
+               </placeName>
+            </place>
+            <place xml:id="pl006">
+               <placeName>
+                  <geogName>The Play</geogName>
+               </placeName>
+            </place>
+            <place xml:id="pl007">
+               <placeName>
+                  <geogName>Boringdon's London residence</geogName>
+               </placeName>
+            </place>
+            <place xml:id="pl008">
+               <placeName>
+                  <geogName>Lady Bessborough's residence</geogName>
+               </placeName>
+            </place>
+            <place xml:id="pl009">
+               <placeName>
+                  <geogName>Oxford</geogName>
+               </placeName>
+            </place>
+            <place xml:id="pl010">
+               <placeName>
+                  <geogName>Lord Digby's residence</geogName>
+               </placeName>
+            </place>
+            <place xml:id="pl011">
+               <placeName>
+                  <geogName>Boyle Farm</geogName>
+               </placeName>
+            </place>
+            <place xml:id="pl012">
+               <placeName>
+                  <geogName>Tower (the)</geogName>
+               </placeName>
+            </place>
+            </listPlace>
+      </body>
+   </text>
+</TEI>

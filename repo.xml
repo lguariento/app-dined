@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>Dined</description>
+    <author>Luca Guariento</author>
+    <author>Luca Guariento</author>
+    <author>Luca Guariento</author>
+    <website/>
+    <status>alpha</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <target>app-dined</target>
+    <prepare>pre-install.xql</prepare>
+    <finish/>
+
+<deployed>2018-10-19T09:24:08.503+01:00</deployed>
+</meta>
